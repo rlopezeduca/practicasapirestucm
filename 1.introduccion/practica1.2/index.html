@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-11-probar-api-rest" class="md-skip">
+        <a href="#practica-12-probar-api-rest" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -704,12 +704,12 @@
 
 
 
-<h1 id="practica-11-probar-api-rest">Práctica 1.1 - Probar API REST</h1>
+<h1 id="practica-12-probar-api-rest">Práctica 1.2 - Probar API REST</h1>
 <p>Para la realización de esta práctica tendrás que seguir los siguientes pasos:</p>
 <h3 id="probar-endpoint">Probar endpoint</h3>
 <ol>
 <li>Entrar en RAPIDAPI y buscar el API de IMDb</li>
-<li>Copiar la URL del panel de la derecha, por ejemplo:<br />
+<li>En la pestaña "Code Snippets" del panel de la derecha copiar la URL, por ejemplo:<br />
 <code>https://imdb236.p.rapidapi.com/api/imdb/cast/nm0000190/titles</code></li>
 <li>Pegar dicha URL en tu navegador</li>
 <li>Comprobar cómo muestra un error de <strong>Invalid API key</strong></li>
@@ -719,7 +719,7 @@
 <li>Copiar la clave de autenticación, es decir, el valor del parámetro "x-rapidapi-key"</li>
 <li>Añadir dicha clave a la URL, por ejemplo:<br />
 <code>https://imdb236.p.rapidapi.com/api/imdb/cast/nm0000190/titles?rapidapi-key=</code><strong>eac2946f4</strong></li>
-<li>Comprobar cómo muestra los datos correctamente</li>
+<li>Comprobar cómo se muestra los datos correctamente</li>
 </ol>
 <h3 id="comprobar-formato-de-salida">Comprobar formato de salida</h3>
 <ol start="8">
@@ -731,9 +731,11 @@
 <h3 id="comprobar-limite-de-consumo">Comprobar límite de consumo</h3>
 <ol start="12">
 <li>Volver a pulsar el botón "Test Endpoint" de RapidAPI</li>
-<li>Pulsar sobre la pestaña "Headers"</li>
-<li>Comprobar el límite de consumo en el campo "x-ratelimit-requests-limit"</li>
-<li>Comprobar las solicitudes restantes en el campo "x-ratelimit-requests-remaining"</li>
+<li>Seleccionar la pestaña "Headers"</li>
+<li>Consultar el valor del límite de consumo<br />
+<code>Campo "x-ratelimit-requests-limit"</code></li>
+<li>Comprobar el valor de las solicitudes restantes<br />
+<code>Campo "x-ratelimit-requests-remaining"</code></li>
 </ol>
 
 
