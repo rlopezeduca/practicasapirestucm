@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../..">
-      
-      
-        <link rel="next" href="../practica1.2/">
       
       
         
@@ -23,7 +19,7 @@
     
     
       
-        <title>Práctica 1.1 - Desarrollo y uso de APIs en Python | PRÁCTICAS</title>
+        <title>Práctica 7.3 - Consumir API REST desplegada - Desarrollo y uso de APIs en Python | PRÁCTICAS</title>
       
     
     
@@ -74,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-11-crear-cuenta-en-rapidapi" class="md-skip">
+        <a href="#practica-73-consumir-api-rest-desplegada" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -110,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 1.1
+              Práctica 7.3 - Consumir API REST desplegada
             
           </span>
         </div>
@@ -256,20 +252,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -290,7 +284,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -305,37 +299,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Práctica 1.1
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../1.introduccion/practica1.1/" class="md-nav__link">
         
   
   
@@ -351,59 +318,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#crear-cuenta-en-rapidapi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Crear cuenta en RapidAPI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#probar-un-api-rest" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Probar un API REST
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observar-los-resultados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Observar los resultados
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -416,7 +330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../practica1.2/" class="md-nav__link">
+      <a href="../../1.introduccion/practica1.2/" class="md-nav__link">
         
   
   
@@ -885,10 +799,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#crear-cuenta-en-rapidapi" class="md-nav__link">
+  <a href="#obtener-endpoint-companero" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear cuenta en RapidAPI
+        Obtener endpoint compañero
       
     </span>
   </a>
@@ -896,10 +810,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#probar-un-api-rest" class="md-nav__link">
+  <a href="#crear-nuevo-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Probar un API REST
+        Crear nuevo proyecto
       
     </span>
   </a>
@@ -907,10 +821,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#observar-los-resultados" class="md-nav__link">
+  <a href="#consumir-datos-del-api-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Observar los resultados
+        Consumir datos del API REST
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesar-y-analizar-datos-del-api-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procesar y analizar datos del API REST
       
     </span>
   </a>
@@ -934,28 +859,50 @@
 
 
 
-<h1 id="practica-11-crear-cuenta-en-rapidapi">Práctica 1.1 - Crear cuenta en RapidAPI</h1>
+<h1 id="practica-73-consumir-api-rest-desplegada">Práctica 7.3 - Consumir API REST desplegada</h1>
 <p>Para la realización de esta práctica tendrás que seguir los siguientes pasos:</p>
-<h3 id="crear-cuenta-en-rapidapi">Crear cuenta en RapidAPI</h3>
+<h3 id="obtener-endpoint-companero">Obtener endpoint compañero</h3>
 <ol>
-<li>Entrar en la web de RapidAPI y crea una cuenta:<br />
-<a href="https://rapidapi.com/">https://rapidapi.com/</a></li>
-<li>Completar el login con tu usuario para entrar en tu cuenta</li>
+<li>Pedir a algún compañero la URL desplegada de su API REST</li>
+<li>Comprobar, utilizando el navegador, que la URL funciona correctamente<br />
+<strong>Probar todos los endpoints del API REST</strong></li>
 </ol>
-<h3 id="probar-un-api-rest">Probar un API REST</h3>
+<h3 id="crear-nuevo-proyecto">Crear nuevo proyecto</h3>
 <ol start="3">
-<li>Escribir en el buscador superior la palabra <strong>"movies"</strong></li>
-<li>Cuando aparezcan los resultados pulsar sobre el API de IMDb</li>
-<li>Pulsar sobre el botón azul de la derecha "Test Endpoint"</li>
+<li>Abrir Cloud Shell Editor:  </li>
+<li>Abrir la carpeta de tu proyecto:<br />
+<code>/home/usuario/consumirapi_usuario</code></li>
+<li>Dentro de la misma crear un archivo llamado "app.py"</li>
 </ol>
-<h3 id="observar-los-resultados">Observar los resultados</h3>
+<h3 id="consumir-datos-del-api-rest">Consumir datos del API REST</h3>
 <ol start="6">
-<li>Observar el código de estado de la respuesta<br />
-<code>200 significa que la solicitud ha funcionado correctamente</code></li>
-<li>Observar el JSON de la respuesta<br />
-<code>Número de items y campos de cada elemento</code></li>
-<li>Observar el headers de la respuesta<br />
-<code>Por ejemplo campos content-type y x-ratelimit-requests-remaining</code></li>
+<li>Copiar el siguiente código en el fichero anterior:<br />
+<code>import requests</code><br />
+<code>url = ""</code><br />
+<code>try:</code><br />
+<code># Realiza la petición y lanza una excepción si error</code><br />
+<code>response = requests.get(url)</code><br />
+<code>response.raise_for_status()</code><br />
+<code># Guardamos los datos en bruto</code><br />
+<code>raw_data = response.json()</code><br />
+<code>print(raw_data)</code><br />
+<code>except requests.exceptions.RequestException as e:</code><br />
+<code>print(f'Error en la petición: {e}')</code>  </li>
+<li>Pegar la URL del compañero en la variable url</li>
+<li>Ejecutar el código anterior</li>
+<li>Comprobar el resultado en el Terminal</li>
+</ol>
+<h3 id="procesar-y-analizar-datos-del-api-rest">Procesar y analizar datos del API REST</h3>
+<ol start="10">
+<li>Abrir el archivo "app.py" para que esté en el contexto</li>
+<li>Utilizando la IA de Gemini realizar, al menos, las siguientes fases:<br />
+* Consumir datos del API REST (ya desarrollado)
+* Estructurar los datos
+* Enriquecer los datos
+* Visualizar la información</li>
+<li>Comprobar que el fichero se haya modificado correctamente</li>
+<li>Ejecutar el código anterior</li>
+<li>Comprobar el resultado en el Terminal y en el Navegador</li>
 </ol>
 
 

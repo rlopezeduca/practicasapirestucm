@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../..">
-      
-      
-        <link rel="next" href="../practica1.2/">
       
       
         
@@ -23,7 +19,7 @@
     
     
       
-        <title>Práctica 1.1 - Desarrollo y uso de APIs en Python | PRÁCTICAS</title>
+        <title>Práctica 6.3 - Devolver datos de un fichero JSON - Desarrollo y uso de APIs en Python | PRÁCTICAS</title>
       
     
     
@@ -74,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-11-crear-cuenta-en-rapidapi" class="md-skip">
+        <a href="#practica-63-devolver-datos-de-un-fichero-json" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -110,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 1.1
+              Práctica 6.3 - Devolver datos de un fichero JSON
             
           </span>
         </div>
@@ -256,20 +252,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -290,7 +284,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -305,37 +299,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Práctica 1.1
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../1.introduccion/practica1.1/" class="md-nav__link">
         
   
   
@@ -351,59 +318,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#crear-cuenta-en-rapidapi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Crear cuenta en RapidAPI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#probar-un-api-rest" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Probar un API REST
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observar-los-resultados" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Observar los resultados
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -416,7 +330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../practica1.2/" class="md-nav__link">
+      <a href="../../1.introduccion/practica1.2/" class="md-nav__link">
         
   
   
@@ -885,10 +799,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#crear-cuenta-en-rapidapi" class="md-nav__link">
+  <a href="#abrir-carpeta-de-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear cuenta en RapidAPI
+        Abrir carpeta de proyecto
       
     </span>
   </a>
@@ -896,10 +810,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#probar-un-api-rest" class="md-nav__link">
+  <a href="#crear-fichero-json-con-datos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Probar un API REST
+        Crear fichero JSON con datos
       
     </span>
   </a>
@@ -907,10 +821,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#observar-los-resultados" class="md-nav__link">
+  <a href="#leer-fichero-json-con-datos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Observar los resultados
+        Leer fichero JSON con datos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modificar-el-objeto-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificar el objeto cliente
       
     </span>
   </a>
@@ -934,28 +859,39 @@
 
 
 
-<h1 id="practica-11-crear-cuenta-en-rapidapi">Práctica 1.1 - Crear cuenta en RapidAPI</h1>
+<h1 id="practica-63-devolver-datos-de-un-fichero-json">Práctica 6.3 - Devolver datos de un fichero JSON</h1>
 <p>Para la realización de esta práctica tendrás que seguir los siguientes pasos:</p>
-<h3 id="crear-cuenta-en-rapidapi">Crear cuenta en RapidAPI</h3>
+<h3 id="abrir-carpeta-de-proyecto">Abrir carpeta de proyecto</h3>
 <ol>
-<li>Entrar en la web de RapidAPI y crea una cuenta:<br />
-<a href="https://rapidapi.com/">https://rapidapi.com/</a></li>
-<li>Completar el login con tu usuario para entrar en tu cuenta</li>
+<li>Abrir Cloud Shell Editor</li>
+<li>Abrir la carpeta de tu proyecto:<br />
+<code>/home/usuario/primerapi_usuario</code></li>
 </ol>
-<h3 id="probar-un-api-rest">Probar un API REST</h3>
+<h3 id="crear-fichero-json-con-datos">Crear fichero JSON con datos</h3>
 <ol start="3">
-<li>Escribir en el buscador superior la palabra <strong>"movies"</strong></li>
-<li>Cuando aparezcan los resultados pulsar sobre el API de IMDb</li>
-<li>Pulsar sobre el botón azul de la derecha "Test Endpoint"</li>
+<li>Abrir el archivo "app.py" para que esté en el contexto</li>
+<li>Crear una carpeta data en tu proyecto</li>
+<li>Pedir al Chat de Gemini que cree un fichero JSON con varios datos que sigan el formato de tu dato original</li>
+<li>Comprobar que el fichero se haya creado correctamente</li>
 </ol>
-<h3 id="observar-los-resultados">Observar los resultados</h3>
-<ol start="6">
-<li>Observar el código de estado de la respuesta<br />
-<code>200 significa que la solicitud ha funcionado correctamente</code></li>
-<li>Observar el JSON de la respuesta<br />
-<code>Número de items y campos de cada elemento</code></li>
-<li>Observar el headers de la respuesta<br />
-<code>Por ejemplo campos content-type y x-ratelimit-requests-remaining</code></li>
+<h3 id="leer-fichero-json-con-datos">Leer fichero JSON con datos</h3>
+<ol start="7">
+<li>Abrir el archivo "app.py" para que esté en el contexto</li>
+<li>Pedir al Chat de Gemini que lea el fichero JSON y devuelva sus datos</li>
+<li>Comprobar que el fichero se haya modificado correctamente</li>
+<li>Ejecutar el código anterior</li>
+<li>Pulsar el enlace que aparece en el Terminal</li>
+<li>Comprobar el resultado en el navegador</li>
+</ol>
+<h3 id="modificar-el-objeto-cliente">Modificar el objeto cliente</h3>
+<ol start="13">
+<li>Modificar los campos del objeto clientes:<br />
+* Añade o modifica los campos del objeto individual cliente
+* Puedes añadir más campos anidados
+* También Puedes cambiar el tipo de objeto: cuentas, usuarios, coches, etc</li>
+<li>Ejecutar el código anterior</li>
+<li>Pulsar el enlace que aparece en el Terminal</li>
+<li>Comprobar el resultado en el navegador  </li>
 </ol>
 
 
