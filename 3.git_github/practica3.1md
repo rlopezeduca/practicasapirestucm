@@ -1,0 +1,25 @@
+# Práctica 3.1 - Crear repositorio local y remoto
+
+Para la realización de esta práctica tendrás que seguir los siguientes pasos:
+
+### Abrir carpeta de proyecto
+1. Abrir Cloud Shell Editor:  
+[https://ide.cloud.google.com//](https://ide.cloud.google.com//)
+1. Abrir la carpeta home de tu proyecto:  
+`/home/usuario/hello`
+1. Comprobar que solo has abierto la carpeta de tu proyecto y no la carpeta home
+
+### Configurar Git
+4. Si no está abierto ya, abrir un nuevo Terminal
+1. Configurar tus credenciales Git
+1. Comprobar que la configuración se ha guardado correctamente
+
+### Crear repositorio local
+7. Inicializar el repositorio
+1. Subir los cambios al repositorio local (Commit)
+1. Comprobar los cambios en el log
+
+### Crear repositorio local
+10. Subir los cambios al repositorio remoto (Publish Branch)
+1. Comprobar los cambios en el log
+1. Entrar en tu cuenta de GitHub y comprobar que el repositorio remoto se creó correctamente
