@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-23-utilizar-el-cli-de-gemini-desde-cloud-shell-editor" class="md-skip">
+        <a href="#practica-23-utilizar-el-cli-de-copilot-desde-visual-studio-code" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -573,10 +573,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#utilizar-el-cli-de-gemini-para-crear-un-programa-python" class="md-nav__link">
+  <a href="#instalar-y-lanzar-el-cli-de-copilot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Utilizar el CLI de Gemini para crear un programa Python
+        Instalar y lanzar el CLI de Copilot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizar-el-cli-de-copilot-para-crear-un-programa-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilizar el CLI de Copilot para crear un programa Python
       
     </span>
   </a>
@@ -1355,10 +1366,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#utilizar-el-cli-de-gemini-para-crear-un-programa-python" class="md-nav__link">
+  <a href="#instalar-y-lanzar-el-cli-de-copilot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Utilizar el CLI de Gemini para crear un programa Python
+        Instalar y lanzar el CLI de Copilot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizar-el-cli-de-copilot-para-crear-un-programa-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilizar el CLI de Copilot para crear un programa Python
       
     </span>
   </a>
@@ -1382,23 +1404,30 @@
 
 
 
-<h1 id="practica-23-utilizar-el-cli-de-gemini-desde-cloud-shell-editor">Práctica 2.3 - Utilizar el CLI de Gemini desde Cloud Shell Editor</h1>
+<h1 id="practica-23-utilizar-el-cli-de-copilot-desde-visual-studio-code">Práctica 2.3 - Utilizar el CLI de Copilot desde Visual Studio Code</h1>
 <p>Para la realización de esta práctica tendrás que seguir los siguientes pasos:</p>
 <h3 id="borrar-carpeta-de-proyecto">Borrar carpeta de proyecto</h3>
 <ol>
-<li>Abrir Cloud Shell Editor</li>
-<li>Abrir la carpeta home de tu usuario:<br />
-<code>/home/usuario</code></li>
+<li>Abrir Visual Studio Code</li>
+<li>Abrir la carpeta donde guardes los proyectos del módulo, por ejemplo:<br />
+<code>C:\Users\usuario\api_rest_python</code></li>
 <li>Borrar la carpeta "hello" que creaste anteriormente</li>
 </ol>
-<h3 id="utilizar-el-cli-de-gemini-para-crear-un-programa-python">Utilizar el CLI de Gemini para crear un programa Python</h3>
+<h3 id="instalar-y-lanzar-el-cli-de-copilot">Instalar y lanzar el CLI de Copilot</h3>
 <ol start="4">
-<li>Si no está abierto ya, abrir un nuevo Terminal</li>
-<li>Inicializar el CLI de Gemini ejecutando el siguiente comando en el Terminal:<br />
-<code>gemini</code></li>
+<li>Abrir un Terminal en Visual Studio Code</li>
+<li>Ejecutar el siguiente comando para instalar el CLI de Copilot:<br />
+<code>winget install GitHub.cli</code></li>
+<li>Ejecutar el CLI de copilot con el siguiente comando:<br />
+<code>copilot</code></li>
+</ol>
+<h3 id="utilizar-el-cli-de-copilot-para-crear-un-programa-python">Utilizar el CLI de Copilot para crear un programa Python</h3>
+<ol start="7">
 <li>Lanzar el siguiente prompt:<br />
 <code>Crea una carpeta llamada hello. En ella crea un archivo llamado app.py. En dicho archivo imprimir el mensaje Hello World</code></li>
-<li>Permite a Gemini que pueda realizar las acciones requeridas</li>
+<li>Permite a Copilot que pueda realizar las acciones requeridas</li>
+<li>Salir del CLI de copilot ejecutando el siguiente comando:<br />
+<code>exit</code></li>
 <li>Comprobar que tanto la carpeta como el archivo se han creado correctamente</li>
 <li>Ejecutar el archivo Python</li>
 <li>Comprobar el resultado en el Terminal</li>
