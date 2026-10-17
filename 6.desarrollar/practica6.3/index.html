@@ -1136,17 +1136,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modificar-el-objeto-cliente" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modificar el objeto cliente
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#subir-cambios-a-github" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1388,17 +1377,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modificar-el-objeto-cliente" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modificar el objeto cliente
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#subir-cambios-a-github" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1431,27 +1409,19 @@
 <h3 id="crear-fichero-json-con-datos">Crear fichero JSON con datos</h3>
 <ol>
 <li>Abrir el archivo "app.py" para que esté en el contexto</li>
-<li>Pedir al Chat de Copilot que cree un fichero JSON con varios datos que sigan el formato de tu dato original en una carpeta llamada data</li>
+<li>Pedir al Chat de Copilot que cree un fichero JSON con datos:<br />
+<code>crea un fichero llamado datos_clientes.json en la carpeta /data. si dicha carpeta no existe créala. En dicho fichero json crea los datos de 10 clientes con el formato que se está utilizando en la variable clientes.</code></li>
 <li>Comprobar que el fichero se haya creado correctamente</li>
 </ol>
 <h3 id="leer-fichero-json-con-datos">Leer fichero JSON con datos</h3>
 <ol start="4">
 <li>Abrir el archivo "app.py" para que esté en el contexto</li>
-<li>Pedir al Chat de Copilot que lea el fichero JSON y devuelva sus datos</li>
+<li>Pedir al Chat de Copilot que lea el fichero JSON y devuelva sus datos:<br />
+<code>actualiza la función obtener_clientes para que lea el fichero /data/datos_clientes.json y devuelva dichos datos en formato JSON. Construye la ruta absoluta de fichero json basándote en la ruta del fichero app.py</code></li>
 <li>Comprobar que el fichero se haya modificado correctamente</li>
 <li>Ejecutar el código anterior</li>
 <li>Pulsar el enlace que aparece en el Terminal</li>
 <li>Comprobar el resultado en el navegador</li>
-</ol>
-<h3 id="modificar-el-objeto-cliente">Modificar el objeto cliente</h3>
-<ol start="10">
-<li>Modificar los campos del objeto clientes:<br />
-- Añade o modifica los campos del objeto individual cliente<br />
-- Puedes añadir más campos anidados<br />
-- También puedes cambiar el tipo de objeto: cuentas, usuarios, coches, etc  </li>
-<li>Ejecutar el código anterior</li>
-<li>Pulsar el enlace que aparece en el Terminal</li>
-<li>Comprobar el resultado en el navegador  </li>
 </ol>
 <h3 id="subir-cambios-a-github">Subir cambios a GitHub</h3>
 <ol start="14">
