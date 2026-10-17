@@ -1466,22 +1466,25 @@
 <ol start="6">
 <li>Modificar el código para que incluya el id en la URL<br />
 <code>url = "https://jsonplaceholder.typicode.com/posts"</code><br />
-<code>querystring = {"userId":"1"}</code><br />
-<code>response = requests.get(url, params=querystring)</code></li>
+<code>querystring = {"id":"2"}</code><br />
+<code>response = requests.get(url, params=querystring)</code>  </li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
 <h3 id="enviar-dos-parametros-de-consulta">Enviar dos parámetros de consulta</h3>
 <ol start="9">
 <li>Modificar el código para que incluya el id y el título en la URL<br />
-<code>querystring = {"userId":"1"}</code> 
-<code>querystring.update({"title":"qui est esse"})</code>
-<code>response = requests.get(url, params=querystring)</code></li>
+<code>querystring = {"id":"2"}</code><br />
+<code>querystring.update({"title":"qui est esse"})</code><br />
+<code>response = requests.get(url, params=querystring)</code>  </li>
+<li>Ejecutar el código anterior</li>
+<li>Comprobar el resultado en el Terminal</li>
+<li>Modificar el valor del campo title</li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
 <h3 id="subir-cambios-a-github">Subir cambios a GitHub</h3>
-<ol start="12">
+<ol start="15">
 <li>Subir tus cambios al repositorio remoto</li>
 </ol>
 

@@ -1458,6 +1458,7 @@
 <h3 id="mostrar-el-codigo-de-estado">Mostrar el código de estado</h3>
 <ol start="3">
 <li>Modifica el código para que imprima el código de estado de la respuesta<br />
+<code>#print(response.json())</code>
 <code>print (response.status_code)</code></li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
@@ -1465,24 +1466,27 @@
 <h3 id="validar-el-codigo-de-estado">Validar el código de estado</h3>
 <ol start="6">
 <li>Utilizar un condicional para comprobar el código de estado<br />
-<code>if (response.status_code == 200):</code>
-<code>print(response.json())</code>
-<code>else:</code>
-<code>print("Error en la solicitud")</code></li>
+<code>if response.status_code == 200:</code><br />
+<code>print(response.json())</code><br />
+<code>else:</code><br />
+<code>print("Error en la solicitud")</code>  </li>
+<li>Ejecutar el código anterior</li>
+<li>Comprobar el resultado en el Terminal</li>
+<li>Modifica el texto de la url por una dirección no válida</li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
 <h3 id="mostrar-las-cabeceras">Mostrar las cabeceras</h3>
-<ol start="9">
+<ol start="12">
 <li>Imprimir la cabecera de la llamada<br />
 <code>print(response.headers)</code></li>
 <li>Imprimir algunos campos concretos de la cabecera de la llamada<br />
-<code>print(response.headers["Content-Type"])</code></li>
+<code>print("Content-Type: " + response.headers["Content-Type"])</code></li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
 <h3 id="subir-cambios-a-github">Subir cambios a GitHub</h3>
-<ol start="12">
+<ol start="16">
 <li>Subir tus cambios al repositorio remoto</li>
 </ol>
 
