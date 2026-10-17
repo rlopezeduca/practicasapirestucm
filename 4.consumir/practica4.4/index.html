@@ -1457,9 +1457,8 @@
 </ol>
 <h3 id="enviar-parametros-de-ruta">Enviar parámetros de ruta</h3>
 <ol start="3">
-<li>Modificar el código para que incluya el id en la URL<br />
-<code>url = "https://jsonplaceholder.typicode.com/posts"</code><br />
-<code>url += "/1"</code></li>
+<li>Modificar el código para que incluya el id de un post <strong>/1</strong> en la URL<br />
+<code>url = "https://jsonplaceholder.typicode.com/posts/1"</code></li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
@@ -1476,7 +1475,8 @@
 <ol start="9">
 <li>Modificar el código para que incluya el id y el título en la URL<br />
 <code>querystring = {"userId":"1"}</code> 
-<code>querystring.update({"title":"qui est esse"})</code></li>
+<code>querystring.update({"title":"qui est esse"})</code>
+<code>response = requests.get(url, params=querystring)</code></li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>

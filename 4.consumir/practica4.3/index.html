@@ -1457,20 +1457,27 @@
 </ol>
 <h3 id="mostrar-el-codigo-de-estado">Mostrar el código de estado</h3>
 <ol start="3">
-<li>Imprimir el código de estado de la llamada</li>
+<li>Modifica el código para que imprima el código de estado de la respuesta<br />
+<code>print (response.status_code)</code></li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
 <h3 id="validar-el-codigo-de-estado">Validar el código de estado</h3>
 <ol start="6">
 <li>Utilizar un condicional para comprobar el código de estado<br />
-<strong>Si es igual a 200 mostrar el JSON. Si no mostrar un mensaje de error</strong></li>
+<code>if (response.status_code == 200):</code>
+<code>print(response.json())</code>
+<code>else:</code>
+<code>print("Error en la solicitud")</code></li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
 <h3 id="mostrar-las-cabeceras">Mostrar las cabeceras</h3>
 <ol start="9">
-<li>Imprimir algunos campos concretos de la cabecera de la llamada</li>
+<li>Imprimir la cabecera de la llamada<br />
+<code>print(response.headers)</code></li>
+<li>Imprimir algunos campos concretos de la cabecera de la llamada<br />
+<code>print(response.headers["Content-Type"])</code></li>
 <li>Ejecutar el código anterior</li>
 <li>Comprobar el resultado en el Terminal</li>
 </ol>
