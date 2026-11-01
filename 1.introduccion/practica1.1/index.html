@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-11-crear-cuenta-en-rapidapi-y-consumir-un-api-rest" class="md-skip">
+        <a href="#practica-11-consumir-varios-endpoint-de-un-api-rest" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -368,10 +368,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#crear-cuenta-en-rapidapi" class="md-nav__link">
+  <a href="#consultar-la-documentacion-del-api-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear cuenta en RapidAPI
+        Consultar la documentación del API REST
       
     </span>
   </a>
@@ -379,10 +379,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#probar-un-api-rest" class="md-nav__link">
+  <a href="#probar-un-endpoint-del-api-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Probar un API REST
+        Probar un endpoint del API REST
       
     </span>
   </a>
@@ -390,21 +390,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#observar-los-resultados" class="md-nav__link">
+  <a href="#probar-otro-endpoint-del-api-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Observar los resultados
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#probar-otro-endpoint" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Probar otro endpoint
+        Probar otro endpoint del API REST
       
     </span>
   </a>
@@ -1366,10 +1355,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#crear-cuenta-en-rapidapi" class="md-nav__link">
+  <a href="#consultar-la-documentacion-del-api-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear cuenta en RapidAPI
+        Consultar la documentación del API REST
       
     </span>
   </a>
@@ -1377,10 +1366,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#probar-un-api-rest" class="md-nav__link">
+  <a href="#probar-un-endpoint-del-api-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Probar un API REST
+        Probar un endpoint del API REST
       
     </span>
   </a>
@@ -1388,21 +1377,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#observar-los-resultados" class="md-nav__link">
+  <a href="#probar-otro-endpoint-del-api-rest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Observar los resultados
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#probar-otro-endpoint" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Probar otro endpoint
+        Probar otro endpoint del API REST
       
     </span>
   </a>
@@ -1426,37 +1404,25 @@
 
 
 
-<h1 id="practica-11-crear-cuenta-en-rapidapi-y-consumir-un-api-rest">Práctica 1.1 - Crear cuenta en RapidAPI y consumir un API REST</h1>
+<h1 id="practica-11-consumir-varios-endpoint-de-un-api-rest">Práctica 1.1 - Consumir varios endpoint de un API REST</h1>
 <p>Para la realización de esta práctica tendrás que seguir los siguientes pasos:</p>
-<h3 id="crear-cuenta-en-rapidapi">Crear cuenta en RapidAPI</h3>
+<h3 id="consultar-la-documentacion-del-api-rest">Consultar la documentación del API REST</h3>
 <ol>
-<li>Entrar en la web de RapidAPI y crea una cuenta personal:<br />
-<a href="https://rapidapi.com/">https://rapidapi.com/</a></li>
-<li>Completar el login con tu usuario para entrar en tu cuenta</li>
+<li>Entrar en la web de API REST JSONPlaceholder:<br />
+<a href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a></li>
+<li>Buscar la sección de "Resources"</li>
 </ol>
-<h3 id="probar-un-api-rest">Probar un API REST</h3>
+<h3 id="probar-un-endpoint-del-api-rest">Probar un endpoint del API REST</h3>
 <ol start="3">
-<li>Escribir en el buscador superior la palabra <em>movies</em></li>
-<li>Cuando aparezcan los resultados pulsar sobre el API de IMDb</li>
-<li>Esconder la pestaña derecha pulsando sobre el botón <em>&gt;&gt;</em></li>
-<li>Pulsar sobre el botón <em>"Subscribe tu run"</em> y escoger el plan gratuito</li>
-<li>Observar, en la pestaña de Parámetros, que vas a pedir información sobre la película con id "nm0000001"</li>
-<li>Pulsar sobre el botón azul de la derecha <strong>Run</strong></li>
+<li>Pulsar sobre el enlace de alguno de los endpoint del API REST, por ejemplo "posts"</li>
+<li>Comprobar el resultado en el navegador</li>
+<li>Observa que la estructura del resultado está en formato JSON</li>
 </ol>
-<h3 id="observar-los-resultados">Observar los resultados</h3>
-<ol start="9">
-<li>Observar el código de estado, en la parte superior de la respuesta<br />
-<code>200 significa que la solicitud ha funcionado correctamente</code></li>
-<li>Observar el JSON de la respuesta<br />
-<code>Número de items y campos de cada elemento</code></li>
-<li>Observar los Headers de la respuesta<br />
-<code>Por ejemplo campos content-type y x-ratelimit-requests-remaining</code></li>
-</ol>
-<h3 id="probar-otro-endpoint">Probar otro endpoint</h3>
-<ol start="12">
-<li>Seleccionar otro endpoint de la lista de que aparece en la esquina inferior izquierda</li>
-<li>Observar, en la pestaña de Parámetros, el id para el que vas a pedir información</li>
-<li>Ejecutar la petición a dicho endpoint y observar el resultado</li>
+<h3 id="probar-otro-endpoint-del-api-rest">Probar otro endpoint del API REST</h3>
+<ol start="6">
+<li>Pulsar sobre el enlace de otro de los endpoint del API REST, por ejemplo "photos"</li>
+<li>Comprobar el resultado en el navegador</li>
+<li>Copia y prueba alguna de las urls de las fotografías</li>
 </ol>
 
 
